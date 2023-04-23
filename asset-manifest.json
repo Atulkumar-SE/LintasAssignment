@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/LintasAssignment/static/css/main.ecda3109.css",
+    "main.js": "/LintasAssignment/static/js/main.32a262e5.js",
+    "index.html": "/LintasAssignment/index.html",
+    "main.ecda3109.css.map": "/LintasAssignment/static/css/main.ecda3109.css.map",
+    "main.32a262e5.js.map": "/LintasAssignment/static/js/main.32a262e5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ecda3109.css",
+    "static/js/main.32a262e5.js"
+  ]
+}
