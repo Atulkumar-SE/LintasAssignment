@@ -1,0 +1,11 @@
+.ast{
+    font-size: 3rem;
+    color: rgb(225, 255, 0);
+}
+.box{
+    width: 70%;
+    height: 100vh;
+    font-size: 5rem;
+    color: #fff;
+    background-color: blueviolet;
+}
