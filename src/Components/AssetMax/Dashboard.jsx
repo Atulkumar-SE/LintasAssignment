@@ -1,7 +1,21 @@
 import React from "react";
 import "./Dashboard.css";
+import { useState } from "react";
 
 const Dashboard = () => {
+  const [costCenter, setCostCenter] = useState();
+  const [costError, setCostError] = useState(false);
+  const handleCost = (e) => {
+    let cost = e.target.value;
+    if(cost.lengt < 3){
+        setCostError(true);
+    }else{
+      costError(false);
+    }
+  }
+  const HandleSubmit =() =>{
+    console.log("submmited")
+  }
   return (
     <>
       <div className="sub_Heading">
@@ -33,7 +47,8 @@ const Dashboard = () => {
         <div className="inputBox">
           <label htmlFor="">Cost Center</label>
           <div>
-            <input type="text" />
+            <input type="text" onChange={handleCost} value={costCenter}/>
+            {costError ? <span style={{color:"red"}}>Name  should be more than 3 character</span> : "" }
           </div>
         </div>
         <div className="inputBox">
@@ -92,7 +107,7 @@ const Dashboard = () => {
         </div>
         <div className="inputBox">
           <label htmlFor="">Pit-To-Use Date</label>
-          <div>
+          <div> 
             <input type="date" />
           </div>
         </div>
@@ -102,7 +117,7 @@ const Dashboard = () => {
             
           </div>
         </div>
-        <button>
+        <button onClick={HandleSubmit}>
           Submit
         </button>
       </form>
