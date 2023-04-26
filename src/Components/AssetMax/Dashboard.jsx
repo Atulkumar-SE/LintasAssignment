@@ -10,6 +10,7 @@ const Dashboard = () => {
     if(cost.lengt < 3){
         setCostError(true);
     }else{
+      setCostCenter(true)
       costError(false);
     }
   }

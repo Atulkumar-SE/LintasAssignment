@@ -2,10 +2,24 @@
     font-size: 3rem;
     color: rgb(225, 255, 0);
 }
-.box{
+.boxx{
     width: 70%;
     height: 100vh;
     font-size: 5rem;
+    
     color: #fff;
     background-color: blueviolet;
+}
+.box{
+    width: 15rem;
+    display: flex;
+    border: 2px solid black;
+    height: 4rem;
+    background: red;
+}
+.highlighted{
+    background: pink;
+}
+.highlight{
+    background: brown;
 }
